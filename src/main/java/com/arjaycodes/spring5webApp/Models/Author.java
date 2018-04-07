@@ -15,7 +15,7 @@ public class Author
     private String lastName;
 
     // Init Properties
-    @ManyToMany
+    @ManyToMany(mappedBy = "authors")
     private Set<Book> books = new HashSet<>();
 
     // Constructors

@@ -17,6 +17,11 @@ public class Book
 
     // Init Properties
     @ManyToMany
+    @JoinTable(
+                name               = "author_book",
+                joinColumns        = @JoinColumn(name =   "book_id"),
+                inverseJoinColumns = @JoinColumn(name = "author_id")
+    )
     private Set<Author> authors = new HashSet<>();
 
     // Constructors
