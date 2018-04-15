@@ -34,14 +34,39 @@ public class devBootstrap {
         addBook(liberNull, peterCarroll);
 
         // Altered Carbon
+        Author richardMorgan = new Author("Morgan", "Richard");
+        Book alteredCarbon = new Book("Altered Carbon", "978-0345457684", "Del Rey");
+        pairBookAndAuthor(alteredCarbon, richardMorgan);
 
         // Snow Crash
+        Author nealStephenson = new Author("Stephenson", "Neal");
+        Book snowCrash = new Book("Snow Crash", "978-0553380958", "Del Rey");
+        addBook(snowCrash, nealStephenson);
 
         // Neuromancer
+        Author williamGibson = new Author("Gibson", "William");
+        Book neuromancer = new Book("Neuromancer","78-0441007462","Ace");
+        pairBookAndAuthor(neuromancer, williamGibson);
 
         // Initiation into Hermetics
+        Author franzBardon = new Author("Bardon", "Franz");
+        Book initiationIntoHermetics = new Book
+        (
+                "Initiation Into Hermetics",
+                "978-1885928122",
+                "Merkur Publishing"
+        );
+        pairBookAndAuthor(initiationIntoHermetics, franzBardon);
 
         // The Seven Laws of Influence
+        Author brianCagneey = new Author("Cagneey", "Brian");
+        Book sevenLaws = new Book
+        (
+                "The Seven Laws of Influence",
+                "978-1539165309",
+                "CreateSpace Independent Publishing"
+        );
+        addBook(sevenLaws, brianCagneey);
 
     }
 
