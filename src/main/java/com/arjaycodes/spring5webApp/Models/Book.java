@@ -27,16 +27,16 @@ public class Book
 
     // Constructors
         //| void
-        Book() {
+        public Book() {
         }
         //| Without authors
-        Book(String title, String isbn, String publisher){
+        public Book(String title, String isbn, String publisher){
             this .setTitle    (title    );
             this .setIsbn     (isbn     );
             this .setPublisher(publisher);
         }
         //| With authors
-        Book(String title, String isbn, String publisher, Set<Author> authors) {
+        public Book(String title, String isbn, String publisher, Set<Author> authors) {
             this .setTitle           (title    );
             this .setIsbn            (isbn     );
             this .setPublisher       (publisher);

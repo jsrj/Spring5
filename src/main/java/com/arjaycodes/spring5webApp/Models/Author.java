@@ -21,15 +21,15 @@ public class Author
 
     // Constructors
         //| Void
-        Author() {
+        public Author() {
         }
         //| Without Books
-        Author(String firstName, String lastName) {
+        public Author(String lastName, String firstName) {
             this .setFirstName (firstName);
             this .setLastName  (lastName );
         }
         //| With Books
-        Author(String firstName, String lastName, Set<Book> books) {
+        public Author(String lastName, String firstName, Set<Book> books) {
             this .setFirstName     (firstName);
             this .setLastName      (lastName );
             this .getBooks().addAll(books    );
